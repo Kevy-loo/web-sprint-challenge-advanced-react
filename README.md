@@ -118,8 +118,18 @@ Be prepared to demonstrate your understanding of this week's concepts by answeri
 
 1. What are the main differences between a class-based and a functional component?
 
+There is no real difference between the two. A class-based component requires you to extend from React.Component and uses a render function. A functional component does not need a render function and is just plain javascript that uses props.
+
 2. When does a componentWillMount function be called? What about a componentDidUpdate?
+
+componentWillMount will happen before a render while componentDidUpdate will trigger after some change has happened in state/props and will then rerender.
 
 3. Define stateful logic.
 
+Stateful logic is logic that is built into a component such as a function that handles a click event.
+
 4. What are the three step of creating a successful test? What is done in each phase? 
+
+Step 1 is Arrange. It will usually render the app or component to the screen.
+Step 2 is Act. This is the step where you find something if it exists within the screen.
+Step 3 is Assert. This is where you will verify if that something actually exists.
